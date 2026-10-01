@@ -25,3 +25,16 @@ json.dumps() # 将Python字典/列表转换为JSON字符串
 json.load() # 从文件中读取JSON数据
 json.dump() # 将Python字典/列表的数据写入文件
 
+# 3.collections
+# 使用更强大的容器数据类型
+from collections import defaultdict, Counter, OrderedDict, namedtuple
+# defaultdict: 提供默认值的dict,若key不存在,则返回默认值
+defaultdict(int) # 创建一个默认值为0的defaultdict
+# Counter: 统计元素出现次数
+Counter(['a', 'b', 'a', 'c']) # 创建一个统计元素出现次数的Counter
+# OrderedDict: 有序的dict,保持插入顺序
+OrderedDict([('a', 1), ('b', 2), ('c', 3)]) # 创建一个有序的dict
+# namedtuple: 创建带字段名的元组，增强代码可读性
+Person = namedtuple('Person', ['name', 'age']) # 创建一个具名元组
+
+
